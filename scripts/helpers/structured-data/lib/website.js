@@ -29,14 +29,5 @@ module.exports = (hexo,option) => {
         height: option.logo.height,
       },
     },
-    potentialAction: {
-      "@type": "SearchAction",
-      name: option.website.search.name,
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: option.website.search.url,
-      },
-      "query-input": option.website.search.query,
-    },
   };
 };

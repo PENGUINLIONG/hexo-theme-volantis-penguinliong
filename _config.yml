@@ -1,8 +1,8 @@
 ############################### Volantis ###############################
 info:
-  theme_name: Volantis # This is theme's name.
+  theme_name: Volantis-PENGUINLIONG # This is theme's name.
   theme_docs: https://volantis.js.org/ # This is theme's URL.
-  theme_repo: https://github.com/volantis-x/hexo-theme-volantis
+  theme_repo: https://github.com/PENGUINLIONG/hexo-theme-volantis-penguinliong
 # Debug 调试模式
 debug: false
 ############################### 默认占位图 ###############################
@@ -79,77 +79,35 @@ scroll_smooth: true
 navbar:
   visiable: auto # always, auto
   logo: # choose [img] or [icon + title]
-    img: volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+    img: #volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
     icon:
-    title:
-  menu:
-    - name: 博客
-      icon: fa-solid fa-rss
-      url: /
-    - name: 分类
-      icon: fa-solid fa-folder-open
-      url: categories/
-    - name: 标签
-      icon: fa-solid fa-tags
-      url: tags/
-    - name: 归档
-      icon: fa-solid fa-archive
-      url: archives/
-    - name: 友链
-      icon: fa-solid fa-link
-      url: friends/
-    - name: 关于
-      icon: fa-solid fa-info-circle
-      url: about/
-  search: Search...   # Search bar placeholder
+    title: Liong.Work
 ############################### Navigation Bar ############################### > end
 
 
 ############################### Cover ############################### > start
 cover:
-  height_scheme: full # full, half
-  layout_scheme: dock # blank (留白), search (搜索), dock (坞), featured (精选), focus (焦点)
+  height_scheme: half # full, half
+  layout_scheme: featured # blank (留白), search (搜索), dock (坞), featured (精选), focus (焦点)
   display:
     home: true
     archive: true
     others: false # can be written in front-matter 'cover: true'
-  background: https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture
+  #background: https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture
   # background: https://bing.ioliu.cn/v1/rand?w=1920&h=1200
   logo: # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-Cover@3x.png
-  title: 'Volantis'
+  title: 'Liong.Work'
   subtitle: ''
-  search: A Wonderful Theme for Hexo # search bar placeholder
   features:
-    - name: 文档
-      icon: #
-      img: volantis-static/media/twemoji/assets/svg/1f5c3.svg # https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f5c3.svg
-      url: /v4/getting-started/
-    - name: 帮助
-      icon: #
-      img: volantis-static/media/twemoji/assets/svg/1f516.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
-      url: faqs/
-    - name: 示例
-      icon: #
-      img: volantis-static/media/twemoji/assets/svg/1f396.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f396.svg
-      url: /examples/
-    - name: 社区
-      icon: #
-      img: volantis-static/media/twemoji/assets/svg/1f389.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f389.svg
-      url: /contributors/
-    - name: 博客
-      icon: #
-      img: volantis-static/media/twemoji/assets/svg/1f4f0.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg
-      url: /archives/
-    - name: 源码
-      icon: #
-      img: volantis-static/media/twemoji/assets/svg/1f9ec.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
-      url: https://github.com/volantis-x/hexo-theme-volantis/
+    #- name: Articles
+    #  icon: #
+    #  img: volantis-static/media/twemoji/assets/svg/1f4f0.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg
+    #  url: /archives/
+    #- name: Github
+    #  icon: #
+    #  img: volantis-static/media/twemoji/assets/svg/1f9ec.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
+    #  url: https://github.com/PENGUINLIONG
 ############################### Cover ############################### > end
-
-pages:
-  # 友链页面配置
-  friends:
-    layout_scheme: traditional # simple: 简单布局, traditional: 传统布局
 
 ############################### Article Layout ############################### > start
 # 文章布局
@@ -175,10 +133,10 @@ article:
   body:
     # 文章顶部信息
     # 从 meta_library 中取
-    top_meta: [author, category, date, counter] #启用评论数量需在此添加
+    top_meta: [author, category, date] #启用评论数量需在此添加
     # 文章底部信息
     # 从 meta_library 中取
-    bottom_meta: [updated, tags, share]
+    bottom_meta: [updated, tags]
     # ----------------
     # 文章页脚组件
     footer_widget:
@@ -210,13 +168,6 @@ article:
         content:
           - '博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议'
           - permalink
-      # ----------------
-      # 打赏组件 (for layout: post)
-      donate:
-        enable: false
-        images:
-          - volantis-static/media/org.volantis/blog/qrcode/github@volantis.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
-          - volantis-static/media/org.volantis/blog/qrcode/github@volantis.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
     # meta library
     meta_library:
       # 默认文章作者（可在 _data/author.yaml 中增加其他作者，并在 front-matter 中设置）
@@ -238,18 +189,6 @@ article:
       # 文章分类
       category:
         icon: fa-solid fa-folder-open
-      # 文章浏览计数
-      counter:
-        icon: fa-solid fa-eye
-        unit: '次浏览'
-      # waline 文章评论数量
-      walinecount:
-        icon: fa-solid fa-comment-dots
-        desc: '条评论' # 条评论
-      # artalk 文章评论数量
-      artalkcount:
-        icon: fa-solid fa-comment-dots
-        desc: '条评论' # 条评论
       # 文章字数和阅读时长
       wordcount:
         icon_wordcount: fa-solid fa-keyboard
@@ -276,74 +215,8 @@ article:
 comments:
   title: <i class='fa-solid fa-comments'></i> 评论
   subtitle:
-  service: giscus
+  service: null
   # 可选评论系统 #
-
-  # artalk
-  # https://artalk.js.org/
-  # https://github.com/ArtalkJS/Artalk
-  artalk:
-    js: https://yours-artalk-domain/dist/Artalk.js   # or https://unpkg.com/artalk@2.2.8/dist/Artalk.js
-    css: https://yours-artalk-domain/dist/Artalk.css # or https://unpkg.com/artalk@2.2.8/dist/Artalk.css
-    server: https://yours-artalk-domain    # 修改为自建的后端服务地址
-    path:  # 全局评论地址
-    placeholder: # 评论占位
-    # artalk 有三类图片：1.上传至服务端 2.上传至服务端后利用upgit上传至图床 3.前端上传至图床（本配置为此类）
-    # 配置此项时将覆盖服务端上传能力
-    imgUploader:
-      # 以兰空图床为例，下列填写内容为：
-      # url: 'https://xxxxxx/api/v1/upload'
-      # token: 'Bearer xxxxxxxxxxxxxx'
-      # resp: 'data.links.url'
-      api: # 图床地址
-      token: # 图床验证
-      resp: # 图片地址返回值的字段
-    # 更多置项可在 Artalk 后端进行配置，详见 https://artalk.js.org/guide/backend/fe-control.html
-    # 也可以在此处继续参考上方例子进行配置，不建议重写配置的字段除上方所述外还有：
-    # [el, useBackendConf, pageKey, pageTitle, site, darkMode, pvEl, imgUploader]
-
-  # giscus
-  # https://giscus.app
-  # https://github.com/laymonage/giscus
-  giscus:
-    # 以下配置按照 yml 格式增删填写即可
-    # repo: xxx/xxx
-    # repo-id: xxx
-    # category: xxx
-    # category-id: xxx
-    # mapping: "pathname"
-    # reactions-enabled: "1"
-    # emit-metadata: "0"
-    # lang: "zh-CN"
-    # 以上配置按照 yml 格式增删填写即可
-    theme:
-      light: "light" # https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/css/giscus/light.css
-      dark: "dark" # https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/css/giscus/dark.css
-
-  # beaudar
-  # https://beaudar.lipk.org/
-  beaudar:
-    repo: xxx/xxx
-    issue-term: pathname
-    issue-number:
-    branch: main
-    position: top
-    order: desc
-    theme:
-      light: github-light
-      dark: github-dark
-    label: ✨💬✨
-
-  # utterances
-  # https://utteranc.es/
-  utterances:
-    repo: xxx/xxx
-    issue-term: pathname
-    issue-number:
-    theme:
-      light: github-light
-      dark: github-dark
-    label: ✨💬✨
 
   # Disqus
   # https://disqus.com
@@ -365,94 +238,13 @@ comments:
     #apikey:
     #admin:
     #nesting:
-
-  # Gitalk
-  # https://gitalk.github.io/
-  gitalk:
-    js: https://unpkg.com/gitalk@1/dist/gitalk.min.js
-    # 配置项按照yml格式继续填写即可 除了 [id distractionFreeMode] 选项
-    clientID:
-    clientSecret:
-    repo:
-    owner:
-    admin: # []
-    path: # 全局评论地址
-
-  # Vssue 暂不支持Pjax
-  # https://vssue.js.org/zh/
-  vssue:
-    js: https://cdn.jsdelivr.net/gh/meteorlxy/vssue@1.4.4/packages/vssue/dist/vssue.github.min.js
-    css: https://cdn.jsdelivr.net/gh/meteorlxy/vssue@1.4.4/packages/vssue/dist/vssue.min.css
-    vue: https://cdn.jsdelivr.net/gh/vuejs/vue@2.6.11/dist/vue.runtime.min.js
-    owner:
-    repo:
-    clientId:
-    clientSecret:
-
-  # LiveRe 暂不支持Pjax
-  # https://www.livere.com
-  livere:
-    uid:
-
-  # Isso
-  # https://posativ.org/isso/
-  isso:
-    url: https://example.com/(path/)
-    src: https://example.com/(path/)js/embed.min.js
-    css:
-    gravatar:
-
-  # HashOver 暂不支持Pjax
-  # https://www.barkdull.org/software/hashover
-  hashover:
-    src: https://example.com/(path/)comments.php
-
-  # Twikoo
-  # https://twikoo.js.org/
-  twikoo:
-    js: https://unpkg.com/twikoo@latest # 建议锁定版本
-    path: # 全局评论地址
-    # 其他配置项按照yml格式继续填写即可 除了 [el path] 选项
-    envId: xxxxxxxxxxxxxxx # 腾讯云环境id
-    placeholder: #全局评论占位，也可以在管理面板中的配置管理处设置（此处优先级更高）
-
-  # Waline
-  # https://waline.js.org/
-  waline:
-    js: https://unpkg.com/@waline/client@v2/dist/waline.js
-    css: https://unpkg.com/@waline/client@v2/dist/waline.css
-    path: # 全局评论地址 目前设置全局评论地址后visitor失效,这是waline的问题
-    placeholder: # 评论占位提示
-    serverURL: # Waline 的服务端地址（必填） 测试用地址: https://waline.vercel.app
-    imageUploader:
-      # 以兰空图床为例，下列填写内容为：
-      # url: https://xxxxxx/api/v1/upload
-      # token: Bearer xxxxxxxxxxxxxx
-      # resp: data.links.url
-      api:   # 图床地址
-      token: # 图床验证
-      resp:  # 图片地址返回值的字段
-    pageview: true # 浏览量统计
-    comment: true  # 评论数统计
-    # 其他配置项按照yml格式继续填写即可 除了 [el path imageUploader] 选项
-    # 组件属性地址：https://waline.js.org/reference/component.html
-    # meta: ['nick', 'mail', 'link']
-
-  # Discuss
-  # https://discuss.js.org
-  discuss:
-    js: https://cdn.jsdelivr.net/npm/discuss/dist/Discuss.js # 建议锁定版本
-    serverURLs: # Discuss server address url
-    # https://discuss.js.org/Quick-Start.html#path
-
-
 ############################### Comments ############################### > end
 
 ############################### Sidebar ############################### > start
 sidebar:
   position: right # left right
   # 主页、分类、归档等独立页面
-  for_page: [blogger, category, tagcloud, donate]
+  for_page: [blogger, category]
   # layout: docs/post 这类文章页面
   for_post: [toc]
   # 侧边栏组件库
@@ -462,21 +254,17 @@ sidebar:
     blogger:
       class: blogger
       display: [desktop, mobile] # [desktop, mobile]
-      avatar: volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+      #avatar: volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+      avatar: https://avatars.githubusercontent.com/u/1487605?v=4
       shape: rectangle # circle, rectangle
-      url: /about/
+      url: https://github.com/PENGUINLIONG
       title:
       subtitle:
-      jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
+      #jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
       social:
-        - icon: fa-solid fa-rss
-          url: /atom.xml
-        - icon: fa-solid fa-envelope
-          url: mailto:me@xxx.com
         - icon: fab fa-github
-          url: https://github.com/volantis-x/
-        - icon: fa-solid fa-headphones-alt
-          url: /
+          url: https://github.com/PENGUINLIONG
+          comment: PENGUINLIONG
     # ---------------------------------------
     # toc widget (valid only in articles)
     toc:
@@ -488,44 +276,6 @@ sidebar:
       list_number: false
       min_depth: 2
       max_depth: 5
-    # ---------------------------------------
-    # music
-    music:
-      class: music
-      display: [desktop, mobile] # [desktop, mobile]
-      pjaxReload: false
-    # ---------------------------------------
-    # category widget
-    category:
-      class: category
-      display: [desktop] # [desktop, mobile]
-      header:
-        icon: fa-solid fa-folder-open
-        title: 文章分类
-        url: /blog/categories/
-    # ---------------------------------------
-    # tagcloud widget
-    tagcloud:
-      class: tagcloud
-      display: [desktop, mobile] # [desktop, mobile]
-      header:
-        icon: fa-solid fa-tags
-        title: 热门标签
-        url: /blog/tags/
-      min_font: 14
-      max_font: 24
-      color: true
-      start_color: '#999'
-      end_color: '#555'
-    # ---------------------------------------
-    # qrcode widget
-    qrcode:
-      class: qrcode
-      display: [desktop, mobile] # [desktop, mobile]
-      height: 64px  # Automatic height if not set
-      images:
-        - volantis-static/media/org.volantis/blog/qrcode/github@volantis.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
-        - volantis-static/media/org.volantis/blog/qrcode/github@volantis.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
     # ---------------------------------------
     # webinfo widget
     webinfo:
@@ -548,15 +298,6 @@ sidebar:
           enable: true
           text: '本站总字数：'   # 需要启用 wordcount
           unit: '字'
-        visitcounter:
-          siteuv:
-            enable: true
-            text: '本站访客数：'
-            unit: '人'
-          sitepv:
-            enable: true
-            text: '本站总访问量：'
-            unit: '次'
         lastupd:
           enable: true
           friendlyShow: true    # 更友好的时间显示
@@ -594,7 +335,7 @@ tag_plugins:
 ############################### Site Footer ############################### > start
 site_footer:
   # layout of footer: [aplayer, social, license, info, copyright]
-  layout: [aplayer, social, license, analytics, info, copyright]
+  layout: [aplayer, social, license, info, copyright]
   social:
     - icon: #fa-solid fa-rss
       url:
@@ -606,12 +347,8 @@ site_footer:
       url:
   # site source
   source: https://github.com/volantis-x/volantis-docs/
-  # analytics using leancloud
-  analytics: >
-    <span id="lc-sv">本站总访问量为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 次</span>
-    <span id="lc-uv">访客数为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span>
   # site copyright
-  copyright: '[Copyright © since 2017 XXX](/)'
+  copyright: '[Copyright 2022 PENGUINLIONG](/)'
   # You can add your own property here. (Support markdown, for example: br: '<br>')
   br: '<br>'
 ############################### Site Footer ############################### > end
@@ -800,7 +537,7 @@ plugins:
   #   icon: fa-solid fa-moon # 可自定义
   #   toggle: darkmode
   darkmode:
-    enable: #true
+    enable: true
 
   # 旧版 Internet Explorer 淘汰行动
   # https://www.microsoft.com/zh-cn/WindowsForBusiness/End-of-IE-support
@@ -813,29 +550,6 @@ plugins:
   # 主题中的某些插件必须启用JavaScript才能正常工作，例如开启scrollreveal如果禁用JavaScript会导致卡片消失
   killNoScript:
     enable: true
-
-  # Artitalk https://artitalk.js.org
-  # 配置过程请参考：https://artitalk.js.org/doc.html
-  # 使用过旧版本的请修改Leancloud shuoshuo class部分列名：https://artitalk.js.org/release.html
-  # 除appID和appKEY外均为选填项
-  artitalk:
-    # Set `plugins: ["artitalk"]` to enable in front-matter
-    # 不支持 Pjax
-    # 配置项按照yml格式继续填写即可
-    js: https://unpkg.com/artitalk
-    appId: ogP8qj3veMh0LFpFWMPOyF0X-MdYXbMMI # your appID
-    appKey: nHXLd3N3Jgh460t2iRQKWAtr # your appKEY
-    # serverURL:  #leancloud绑定的api访问域名，使用国际版的话不需要填写
-    # lang: # 语言设置，zh为汉语，en为英语，es为西班牙语。默认为汉语
-    # pageSize: #每页说说的显示数量
-    # shuoPla: #在编辑说说的输入框中的占位符
-    # avatarPla: #自定义头像url的输入框的占位符
-    # motion: #加载动画的开关，1为开，0为关，默认为开
-    # bgImg: #说说输入框背景图片url
-    # color1: #说说背景颜色1&按钮颜色1
-    # color2: #说说背景颜色2&按钮颜色2
-    # color3: #说说字体颜色
-    # cssUrl: #自定义css接口
 
   # BBtalk https://bb.js.org
   bbtalk:
@@ -928,7 +642,6 @@ rightmenus:
     - menus.link
     - hr
     - menus.darkMode
-    - plugins.articlePage
     - music
   ############################
   # - {id: '', name: '', icon: '', link: '', event: '', group: ''}
@@ -940,7 +653,7 @@ rightmenus:
   # group: 菜单项所处分组名称
   # 注： 
   # 1. link/event 二选一，同时出现时仅处理 link
-  # 2. 内置事件列表： copyText, copyLink, copyPaste, copyAll, copyCut, copyImg, printMode, readMode
+  # 2. 内置事件列表： copyText, copyLink, copyPaste, copyAll, copyCut, copyImg
   # 3. 内置组列表：navigation, inputBox, seletctText, elementCheck, elementImage, articlePage
   # 4. plugins 列允许自定义组内项目
   # 5. menus   列允许自定义组及其内容
@@ -974,7 +687,6 @@ rightmenus:
     # 生效于右键选中文本，__text__ 为选中的文本。
     seletctText:
       - {id: 'copyText', name: '复制文本', icon: 'fa-solid fa-copy', event: 'copyText', group: 'seletctText'}
-      - {id: 'searchWord', name: '站内搜索', icon: 'fa-solid fa-search', event: 'OpenSearch(__text__)', group: 'seletctText'}
       - {id: 'bingSearch', name: '必应搜索', icon: 'fa-solid fa-search', event: 'window.open(`https://cn.bing.com/search?q=${__text__}`)', group: 'seletctText'}
       #- {id: 'googleSearch', name: '谷歌搜索', icon: 'fa-solid fa-search', event: 'window.open(`https://www.google.com/search?q=${__text__}`)', group: 'seletctText'}
     # 链接判断组件
@@ -987,20 +699,8 @@ rightmenus:
     elementImage:
       - {id: 'copyImg', name: '复制图片', icon: 'fa-solid fa-image', event: 'copyImg', group: 'elementImage'}
       - {id: 'googleImg', name: '谷歌识图', icon: 'fa-solid fa-images', event: 'window.open(`https://www.google.com.hk/searchbyimage?image_url=${__link__}`)', group: 'elementImage'}
-    # 文章页面组件
-    # 生效于 post.article 页面
-    articlePage:
-      - {id: 'printMode', name: '打印页面', icon: 'fa-solid fa-print', event: 'printMode', group: 'articlePage'}
-      - {id: 'readMode', name: '阅读模式', icon: 'fa-solid fa-book-open', event: 'readMode', group: 'articlePage'}
   # 右键自定义菜单区域
   menus:
-    link:
-      - {id: 'help', name: '常见问题', icon: 'fa-solid fa-question', link: 'https://volantis.js.org/faqs/', group: 'link'}
-      - {id: 'examples', name: '示例博客', icon: 'fa-solid fa-rss', link: 'https://volantis.js.org/examples/', group: 'link'}
-      - {id: 'contributors', name: '加入社区', icon: 'fa-solid fa-fan', link: 'https://volantis.js.org/contributors/', group: 'link'}
-      - hr
-      - {id: 'source_docs', name: '本站源码', icon: 'fa-solid fa-code-branch', link: 'https://github.com/volantis-x/volantis-docs/', group: 'link'}
-      - {id: 'source_theme', name: '主题源码', icon: 'fa-solid fa-code-branch', link: 'https://github.com/volantis-x/hexo-theme-volantis/', group: 'link'}
     darkMode:
       - {id: 'darkMode', name: '暗黑模式', icon: 'fa-solid fa-moon', event: 'volantis.dark.toggle()', group: 'darkMode'}
 ###
@@ -1032,33 +732,7 @@ rightmenu:
     name: 常见问题
     icon: fa fa-question
     url: https://volantis.js.org/faqs/
-  examples:
-    name: 示例博客
-    icon: fa fa-rss
-    url: https://volantis.js.org/examples/
-  contributors:
-    name: 加入社区
-    icon: fa fa-fan fa-spin
-    url: https://volantis.js.org/contributors/
-  source_docs:
-    name: 本站源码
-    icon: fa fa-code-branch
-    url: https://github.com/volantis-x/volantis-docs/
-  source_theme:
-    name: 主题源码
-    icon: fa fa-code-branch
-    url: https://github.com/volantis-x/hexo-theme-volantis/
 ############################### Rightmenu ############################### > end
-
-
-############################### Search ############################### > start
-# To use hexo search, you need to install the following plugins:
-# npm i hexo-generator-json-content
-search:
-  enable: true
-  service: hexo  # hexo
-  js:
-############################### Search ############################### > end
 
 ############################### Color Scheme ############################### > start
 # Accessibility: 背景色和前景色要有足够的对比度 https://web.dev/color-contrast/
@@ -1217,13 +891,13 @@ custom_css:
     footnote: .78125rem
   fontfamily:
     logofont:
-      fontfamily: '"Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      fontfamily: '"Noto Sans", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
       name: 'Varela Round'
       url: volantis-static/media/fonts/VarelaRound/VarelaRound-Regular.ttf # https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf
       weight: normal
       style: normal
     bodyfont:
-      fontfamily: 'UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      fontfamily: '"Noto Sans", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
       name: 'UbuntuMono'
       url: volantis-static/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf # https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf
       weight: normal
@@ -1235,16 +909,6 @@ custom_css:
       # weight: normal
       # style: normal
 ############################### Custom css ############################### > end
-
-
-############################### Analytics ############################### > start
-analytics:
-  busuanzi: #volantis-static/libs/busuanzi/js/busuanzi.pure.mini.js #https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
-  leancloud: # 请使用自己的 id & key 以防止数据丢失
-    app_id: # u9j57bwJod4EDmXWdxrwuqQT-MdYXbMMI
-    app_key: # jfHtEKVE24j0IVCGHbvuFClp
-    custom_api_server: # 国际版一般不需要写，除非自定义了 API Server
-############################### Analytics ############################### > end
 
 ############################### SEO ############################### > start
 seo:

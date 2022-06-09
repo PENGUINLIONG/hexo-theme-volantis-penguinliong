@@ -162,23 +162,25 @@
         justify-content: space-between
         flex-wrap: wrap
         margin: 4px $gap * 0.25
-        a
-          color: var(--color-meta)
-          padding: 0
-          trans()
-          &:hover
-            color: $color-hover
-          &.social
-            display: flex
-            justify-content: center
-            align-items: center
-            width: 32px
-            height: 32px
-            margin: 4px
-            border-radius: 100px
+        .social
+          display: flex
+          justify-content: center
+          align-items: center
+          #width: 32px
+          height: 32px
+          margin: 4px
+          border-radius: 100px
+          a
+            color: var(--color-meta)
+            padding: 0
+            trans()
             &:hover
               background: bgcolor($color-theme)
               color: $color-theme
+          .social-comment
+            display: inline-block
+            font-family: $fontfamily
+
 
         @media screen and (max-width: $device-tablet)
           justify-content: center

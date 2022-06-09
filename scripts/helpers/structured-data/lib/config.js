@@ -21,11 +21,6 @@ module.exports = function (hexo) {
       url: config.url + config.root,
       keywords: config.keywords,
       description: config.description,
-      search: {
-        name: "Site Search",
-        url: config.url + "?s={search_term_string}",
-        query: "required name=search_term_string",
-      },
     },
   };
 };
